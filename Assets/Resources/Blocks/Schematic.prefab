@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MovementSmoothing: 60
   clusterOptimizer:
-    ExcludedBlockTypes: 05000000240000001e000000090000002700000021000000030000000a0000002300000002000000
+    ExcludedBlockTypes: 05000000240000001e000000090000002700000021000000030000000a00000023000000020000002b000000
     MaxDistanceForPrimitiveCluster: 2.5
     MaxPrimitivesPerCluster: 100
     MinimumSizeBeforeBeingBigPrimitive: 10

@@ -47,6 +47,7 @@ public static class Decompiler
 			Dict.Add(BlockType.AudioPlayer, gameObject.AddComponent<DONT_TOUCH.Scripts.BlockComponents.AudioPlayerComponent>());
 			Dict.Add(BlockType.CullingZone, gameObject.AddComponent<DONT_TOUCH.Scripts.BlockComponents.CullingZoneComponent>());
 			Dict.Add(BlockType.Generator, gameObject.AddComponent<DONT_TOUCH.Scripts.BlockComponents.GeneratorComponent>());
+			Dict.Add(BlockType.PrismaticCloud, gameObject.AddComponent<DONT_TOUCH.Scripts.BlockComponents.PrismaticCloudComponent>());
 			return this;
 		}
 	}
@@ -113,7 +114,9 @@ public static class Decompiler
 		System.Diagnostics.Stopwatch stopwatch = System.Diagnostics.Stopwatch.StartNew();
 		Debug.Log("<color=#FFFF00>Importing schematic...</color>");
 
-		_schematicBuilder = new GameObject("SchematicBuilder").AddComponent<SchematicBuilder>().Init();
+		GameObject builderObject = new GameObject("SchematicBuilder");
+		builderObject.SetActive(false);
+		_schematicBuilder = builderObject.AddComponent<SchematicBuilder>().Init();
 
 		CreateRecursiveFromID(_schematicData.RootObjectId, _schematicData.Blocks, _rootTransform);
 		CreateCullingZone(_schematicData.Blocks);

@@ -208,6 +208,9 @@ public class RightClickMenuExtended
 	
 	[MenuItem("GameObject/🛠️ MER Blocks/Generator", false, -1)]
 	private static void CreateGenerator(MenuCommand menuCommand) => CreateBlock(menuCommand, "Assets/Resources/Blocks/Generator.prefab");
+
+	[MenuItem("GameObject/🛠️ MER Blocks/Prismatic Cloud", false, -1)]
+	private static void CreatePrismaticCloud(MenuCommand menuCommand) => CreateBlock(menuCommand, "Assets/Resources/Blocks/PrismaticCloud.prefab");
 	
 	private static void CreateBlock(MenuCommand menuCommand, string prefabPath)
 	{

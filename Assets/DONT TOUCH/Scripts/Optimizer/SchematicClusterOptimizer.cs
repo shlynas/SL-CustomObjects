@@ -13,7 +13,7 @@ public class SchematicClusterOptimizerSettings
     {
         BlockType.Schematic, BlockType.CullingParent, BlockType.Door, BlockType.Interactable, BlockType.Trigger,
         BlockType.PlayerSpawnPoint, BlockType.Pickup,
-        BlockType.Waypoint, BlockType.PlayerBlocker, BlockType.Light, BlockType.CullingZone
+        BlockType.Waypoint, BlockType.PlayerBlocker, BlockType.Light, BlockType.CullingZone, BlockType.PrismaticCloud
     };
 
     [Min(0f)] public float MaxDistanceForPrimitiveCluster = 2.5f;
