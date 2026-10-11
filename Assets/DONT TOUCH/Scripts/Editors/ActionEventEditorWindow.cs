@@ -518,6 +518,13 @@ namespace DONT_TOUCH.Scripts.Editors
             displayOptions.Add("Play");
             propertyNames.Add("Play");
             propertyTypes.Add(typeof(object));
+
+            if (target.TryGetComponent<Rigidbody>(out _))
+            {
+                displayOptions.Add("Rigidbody.isKinematic");
+                propertyNames.Add("Rigidbody.isKinematic");
+                propertyTypes.Add(typeof(bool));
+            }
             if (displayOptions.Count == 0)
             {
                 EditorGUI.PropertyField(new Rect(x, y, width, EditorGUIUtility.singleLineHeight), paramProperty,

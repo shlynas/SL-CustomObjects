@@ -60,7 +60,8 @@ namespace DONT_TOUCH.Scripts.BlockComponents
 				new("OnInteracted", "On Interacted"),
 				new("OnSearching", "On Searching"),
 				new("OnSearched", "On Searched"),
-				new("OnSearchAborted", "On Search Aborted")
+				new("OnSearchAborted", "On Search Aborted"),
+				new("OnAccessDenied", "On Access Denied")
 			};
 		}
 

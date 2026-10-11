@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using DONT_TOUCH.Enums;
 using DONT_TOUCH.Scripts.BlockSerialization;
 using UnityEngine;
@@ -25,7 +25,7 @@ namespace DONT_TOUCH.Scripts.BlockComponents.Locker
             MaxPerChamber = serializableLockerItem.MaxPerChamber;
         }
     
-        [Tooltip("The ItemType of this pickup.")]
+        [Tooltip("The ItemType of this pickup."), SearchableEnum]
         public ItemType TargetItem;
 
         [Min(0)]

@@ -1,4 +1,4 @@
-﻿namespace DONT_TOUCH.Enums
+namespace DONT_TOUCH.Enums
 {
     public enum BlockType
     {
@@ -27,5 +27,6 @@
         CullingZone = 41,
         Generator = 42,
         PrismaticCloud = 43,
+        CameraTransfer = 44,
     }
 }
